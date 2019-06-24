@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-@Entity
+@Entity // makes class persistent
 public class Category {
 
     @Id

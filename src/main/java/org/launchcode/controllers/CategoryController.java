@@ -20,6 +20,7 @@ public class CategoryController {
     @Autowired
     private CategoryDao categoryDao;
 
+    // index handler
     @RequestMapping(value="")
     public String index(Model model){
 

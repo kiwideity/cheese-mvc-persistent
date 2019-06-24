@@ -13,6 +13,7 @@ import java.util.List;
 
  */
 
+// persistence
 @Entity
 public class Cheese {
 

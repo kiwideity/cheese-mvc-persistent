@@ -11,6 +11,7 @@ import javax.validation.constraints.Size;
 import java.util.ArrayList;
 import java.util.List;
 
+// persistence
 @Entity
 public class Menu {
     @Id
