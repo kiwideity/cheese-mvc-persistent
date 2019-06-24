@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org/">
-<head>
-    <title th:text="${title}">Title</title>
+<head th:replace="fragments :: head"></head>
 
-</head>
-<body>
+<body class="container">
+
+<h1 th:text="${title}">Default Title</h1>
+
+<nav th:replace="fragments :: navigation"></nav>
 <ul>
-    <li th:each="category : ${categories}" th:text="${category.name}"></li>
+    <li th:each="category: ${categories}" th:text="${category.name}"></li>
 </ul>
-<nav th:fragment="navigation">
-    <a href="/category/add">Add Category</a>
-</nav>
+
+<a th:href="@{'/category/add/'}">Add Category</a>
+
 </body>
 </html>

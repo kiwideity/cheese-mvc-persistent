@@ -29,8 +29,8 @@ public class Cheese {
     @Size(min=1, message = "Description must not be empty")
     private String description;
 
-    @NotNull
-    private int rating;
+   // @NotNull
+    //private int rating;
 
     @ManyToOne
     private Category category;
@@ -73,11 +73,11 @@ public class Cheese {
         this.description = description;
     }
 
-       public int getRating() {
-        return rating;
-    }
+    // public int getRating() {
+    //    return rating;
+    //}
 
-    public void setRating(int rating) {
-        this.rating = rating;
-    }
+    //public void setRating(int rating) {
+     //   this.rating = rating;
+    //}
 }
